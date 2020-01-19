@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'San Francisco Text Light';
+    src: url('../fonts/SFUIText-Light.eot');
+    src: url('../fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIText-Light.woff') format('woff'),
+    url('../fonts/SFUIText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin light {
+    font-family: 'San Francisco Text Light';
+}

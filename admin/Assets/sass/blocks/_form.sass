@@ -1,0 +1,175 @@
+.form
+    padding-top: 50px
+    padding-bottom: 50px
+    position: relative
+    &_wrap_login_subtitle
+        color: #3498db
+        position: relative
+        text-transform: uppercase
+        text-align: center
+    &_wrap_content
+        color: #bdc3c7
+    &_wrap_login_title::before 
+        background: #3498db
+        position: absolute
+        content: ''
+        width: 50px
+        height: 2px
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 25px)
+    &_wrap_login_title
+        position: relative
+        margin-bottom: 50px
+    &_wrap_login_p
+        position: relative
+        margin-bottom: 35px
+    &_wrap_password_p
+        transition: 0.4s ease
+        position: relative
+        margin-bottom: 45px
+    &_wrap_password_p::before 
+        bottom: 0 
+        transition: 0.4s ease
+        background: #bdc3c7
+        position: absolute
+        content: ''
+        width: 103.5%
+        height: 2px
+    &_wrap_login_p::before
+        transition: 0.4s ease 
+        bottom: 0 
+        background: #bdc3c7
+        position: absolute
+        content: ''
+        width: 103.5%
+        height: 2px
+    &_wrap_login
+        overflow: hidden
+        position: relative
+        background: #ffffff
+        padding: 50px
+        box-shadow: 0px 0px 25px #2c3e50
+        width: 420px
+        margin: 0 auto
+    &_wrap_login::before 
+        position: absolute
+        content: ''
+        width: 400px 
+        height: 400px 
+        background: #ecf0f1
+        top: 0
+        left: -50px
+        transform: rotate(45deg) translate(-120px)
+    &_wrap_checkbox_p
+        margin-bottom: 45px
+    &_wrap_checkbox_input
+        display: none
+    &_wrap_login_input
+        padding-left: 65px 
+        outline: none
+        font-size: 24px
+        background: transparent
+        height: 55px
+        border: none
+    &_wrap_span_checkbox
+        color: #2c3e50
+        padding-left: 60px
+        font-size: 18px
+    &_wrap_checkbox_label
+        display: flex 
+        position: relative
+        align-items: center
+    &_wrap_checkbox_label::before
+        position: absolute
+        content: ''
+        width: 20px 
+        left: 20px
+        border-radius: 5px
+        height: 20px 
+        border: 2px solid #bdc3c7
+        background: transparent
+        transition: 0.4s ease
+    &_wrap_checkbox_label:hover::before
+        transition: 0.4s ease
+        background: rgba(189, 195, 199,.5)
+    &_wrap_checkbox_label_active::before
+        position: absolute
+        border: 2px solid #3498db
+        content: ''
+        width: 20px 
+        box-shadow: 0px 0px 2px #2c3e50
+        left: 20px
+        border-radius: 5px
+        height: 20px 
+        transition: 0.4s ease
+        background: #3498db
+    &_wrap_checkbox_label_active:hover::before
+        background: rgba(52, 152, 219,1.0)
+        transition: 0.4s ease
+    &_wrap_password_input
+        padding-left: 65px 
+        outline: none
+        font-size: 24px
+        background: transparent
+
+        height: 55px
+        border: none
+    &_wrap_button_send
+        cursor: pointer
+        overflow: hidden
+        z-index: 9999
+        position: relative
+        box-shadow: 0px 0px 2px #2c3e50
+        font-size: 24px 
+        border: none 
+        text-transform: uppercase 
+        color: #ecf0f1
+        outline: none
+        background: #3498db
+        padding: 10px 55px
+    &_wrap_button_send::before 
+        z-index: -1
+        position: absolute
+        content: ''
+        width: 0
+        transform: scale(1)
+        height: 100%
+        transition: 0.1s ease
+        left: 0 
+        top: 0
+        background: rgba(52, 73, 94,1.0)
+    &_wrap_button_send:hover::before
+        z-index: -1
+        left: 0
+        top: 0
+        position: absolute
+        content: ''
+        width: 100%
+        transition: 0.1s ease
+        transform: scale(1)
+        height: 100%
+        background: #34495e
+    &_wrap_button
+        text-align: center
+    &_wrap_logotype
+        z-index: 999
+        position: relative
+        margin-bottom: 25px
+        background: url('../img/logotype.png') center center
+        padding: 35px
+        background-repeat: no-repeat 
+        background-size: contain
+    &_wrap_p_active::before
+        bottom: 0 
+        background: #3498db
+        position: absolute
+        content: ''
+        animation: decrease 0.5s ease 1
+        height: 2px
+
+@keyframes decrease
+    0%
+        width: 0%
+    100%
+        width: 103.5%
